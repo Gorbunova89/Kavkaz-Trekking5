@@ -141,7 +141,7 @@ img {
     .header {
         width: 100%;
         display:inline-block;
-        font-size: 75%;
+        font-size: 70%;
     }
 
     .container {
@@ -157,10 +157,10 @@ img {
     }
 
     .img {
-        width: 30%;
+        width: 32%;
         display: inline;
-        margin-left: 2px;
-        margin-right: 2px;
+        margin-left: 1px;
+        margin-right: 1px;
     }
 
     .card {
