@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: olive;
+    color: rgb(37, 37, 37);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Задаю свойства хэдеру: ширина, расположение по центру, 
+фиксированная позиция, прикрепление кверху, расположение по ширине экрана */
+.header {
+    width: 750px;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Задаю свойства верхнему меню: бэкграунд, внутренние отступы */
+.navbar {
+    background: blanchedalmond;
+    margin: auto;
+    padding: 15px 20px;
+}
+
+/* Задаю свойства листу, 
+убираю точки и располагаю в одну линию */
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+/* Задаю свойства ссылкам,
+ чтобы они расклеились и располагались по центру */
+.navbar ul li {
+    margin: auto;
+}
+
+/* Задаю свойства ссылке, убираю подчеркивание */
+a {
+    text-decoration: none;
+    color: rgb(24, 24, 24);
+    font-weight: bolder;
+}
+
+/* Задаю свойства контейнеру: ширина, по центру, бэкграунд, 
+отступы сверху и снизу, внутренние отступы */
+.container {
+    width: 750px;
+    margin: auto;
+    background: blanchedalmond;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding: 20px 0px;
+}
+
+/* В каждой карточке задаю бэкграунд, границы, 
+отступы снаружи и внутри */
+.card {
+    background: #c0f437;
+    border: solid;
+    border-radius: 15px;
+    border: none;
+    margin: 10px;
+    padding: 15px;
+}
+
+/* Делаю отсуп от заголовка h2 20п снизу */
+.card h2 {
+    padding-bottom: 20px;
+}
+
+/* Делаю текст в карточке по всей ширине, делаю отсуп 20п снизу */
+p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Задаю ширину подвала 750п, ставлю подвал по центру, задаю верхний отступ */
+.footer {
+    width: 750px;
+    margin: auto;
+    background: blanchedalmond;
+}
+
+/* Задаю высоту и цвет подвала */
+.two-nav {
+    padding: 100px 15px;
+    background: rgb(24, 24, 24);
+}
+
+/* Задаю ширину фото 200п располагаю фото в одну линию, делаю окргулые края и тень */
+img {
+    width: 200px;
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px 0px rgb(74, 74, 75);
+    /* раздвинула фотки между собой  */
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* Устанавливаю блок с фото по центру карточки */
+.foto {
+    text-align: center;
+}
+
+/* Меняю цвет ссылок в футере */
+.footer a {
+    color: blanchedalmond;
+}
+
+/* Меняю цвет ссылки при наведении курсора в футере */
+.footer a:hover {
+    color: #c0f437;
+}
+
+/* Меняю размер ссылки при наведении курсора в хэдере */
+.header a:hover {
+    font-size: 1.1rem;
+}
+
+/* Меняю цвет бэкграунда при наведении курсора на карточку */
+.card:hover {
+    background: #9edb05;
+}
+
+
+/* адаптирую сайт под медиазапрос со смартфона и планшета */
+@media screen and (min-width:320px) and (max-width:750px) {
+
+      /* Здесь свойство отступа от хэдера */
+    body {
+        margin-top: 80px;
+    }
+    
+    .header {
+        width: 100%;
+        display:inline-block;
+        font-size: 75%;
+    }
+
+    .container {
+        width: 100%;
+        display: inline;
+    }
+
+    .footer {
+        width: 100%;
+        display: inline-block;
+        font-size: 90%;
+        margin-top: 30px;
+    }
+
+    .img {
+        width: 30%;
+        display: inline;
+    }
+
+    .card {
+        font-size: 90%;
+    }
+}
