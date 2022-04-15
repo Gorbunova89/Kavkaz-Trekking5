@@ -157,12 +157,12 @@ img {
     }
 
     .img {
-        width: 32%;
+        width: 30%;
         display: inline;
-        margin-left: 1px;
-        margin-right: 1px;
+        margin-left: 2px;
+        margin-right: 2px;
     }
-
+    
     .card {
         font-size: 90%;
     }
